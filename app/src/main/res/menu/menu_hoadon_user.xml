@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/act_gotodetal"
+        android:title="Chi tiết hóa đơn" />
+    <item
+        android:id="@+id/act_huy"
+        android:title="Hủy đơn" />
+    <item
+        android:id="@+id/act_xoaDon"
+        android:title="Xóa" />
+</menu>

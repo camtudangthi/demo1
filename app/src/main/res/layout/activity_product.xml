@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".ProductActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_close"
+        android:onClick="closeProduct"/>
+
+    <TextView
+        android:id="@+id/tv_title_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/titleManager"
+        android:text="Sản phẩm" />
+
+    <RelativeLayout
+        android:id="@+id/layout_product_ex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_title_product">
+
+        <ImageView
+            android:id="@+id/img_picture_product"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/camera" />
+
+        <EditText
+            android:id="@+id/edt_id_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img_picture_product"
+            android:hint="Mã sản phẩm"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/edt_name_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/img_picture_product"
+            android:layout_below="@+id/edt_id_pro"
+            android:inputType="textPersonName"
+            android:hint="Tên sản phẩm" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/layout_product_ex"
+        android:id="@+id/layout_cate"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_cate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/img_btn_gotoCate"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_button_add"
+            app:srcCompat="@drawable/ic_add" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_dec_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/layout_cate"
+        android:inputType="textPersonName"
+        android:hint="Mô tả" />
+
+    <EditText
+        android:id="@+id/edt_amount_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edt_dec_product"
+        android:inputType="textPersonName|number"
+        android:hint="Số lượng" />
+
+    <EditText
+        android:id="@+id/edt_price_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edt_amount_pro"
+        android:inputType="textPersonName|number"
+        android:hint="Giá tiền" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_price_product"
+        android:layout_marginTop="40sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add_product"
+            style="@style/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btn_up_product"
+            style="@style/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lưu" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:onClick="closeProduct"
+            android:text="Quay lại"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</RelativeLayout>

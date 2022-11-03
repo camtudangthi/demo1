@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">An Nhiên</string>
+
+    <string name="bot_nav_home">Trang chủ</string>
+    <string name="bot_nav_category">Danh mục</string>
+    <string name="bot_nav_mail">Thư</string>
+    <string name="bot_nav_acc">Tài khoản</string>
+
+    <string name="facebook_app_id">1533142120468277</string>
+    <string name="facebook_client_token">5f2c47b8bb26ffabdd75bacb2030630e</string>
+
+    <string-array name="status_don">
+        <item>Đợi xác nhận</item>
+        <item>Đang xử lý</item>
+        <item>Đã nhận hàng</item>
+        <item>Đã hủy</item>
+        <item>Tất cả</item>
+    </string-array>
+</resources>

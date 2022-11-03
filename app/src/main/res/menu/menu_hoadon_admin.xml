@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/act_detal"
+        android:title="Chi tiết" />
+    <item
+        android:id="@+id/act_stat_0"
+        android:title="Đợi xác nhận" />
+    <item
+        android:id="@+id/act_stat_1"
+        android:title="Đang xử lý" />
+    <item
+        android:id="@+id/act_stat_2"
+        android:title="Đã nhận hàng" />
+    <item
+        android:id="@+id/act_stat_3"
+        android:title="Đã hủy" />
+    <item
+        android:id="@+id/act_xoa"
+        android:title="Xóa đơn hàng" />
+</menu>
